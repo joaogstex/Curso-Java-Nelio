@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 import com.abstractatv.entities.Circle;
 import com.abstractatv.entities.Rectangle;
+import com.abstractatv.entities.abstracts.Shape;
 import com.abstractatv.entities.enums.Color;
 
 public class AreaService {
@@ -13,7 +14,7 @@ public class AreaService {
     public void getArea() {
         System.out.println("Enter the number of shapes: ");
         Integer quantity = Integer.parseInt(scanner.nextLine());
-        List<String> shapes = new ArrayList<>();
+        List<Shape> shapes = new ArrayList<>();
         for(int i = 1; i <= quantity; i++) {
             System.out.println("Shape #"+i+" data:");
             System.out.println("Rectangle or circle? (r/c)");
@@ -27,18 +28,18 @@ public class AreaService {
                 System.out.println("Height: ");
                 Double height = Double.parseDouble(scanner.nextLine());
                 Rectangle rectangle = new Rectangle(color, height, width);
-                shapes.add(rectangle.toString());
+                shapes.add(rectangle);
             } else if(choosenChar == 'c') {
                 System.out.println("Color (BLACK/BLUE/RED): ");
                 Color color = Color.valueOf(scanner.nextLine());
                 System.out.println("Radius: ");
                 Double radius = Double.parseDouble(scanner.nextLine());
                 Circle circle = new Circle(color, radius);
-                shapes.add(circle.toString());
+                shapes.add(circle);
             }
         }
         System.out.println("SHAPE AREAS: ");
-        for(String shape : shapes) {
+        for(Shape shape : shapes) {
             System.out.println(shape);
         }
     }

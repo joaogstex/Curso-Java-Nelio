@@ -27,7 +27,7 @@ public class Circle extends Shape{
 
     @Override
     public String toString() {
-        return "" + area();
+        return String.format("%.2f", area());
     }
 
 }
