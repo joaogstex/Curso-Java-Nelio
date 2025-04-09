@@ -1,0 +1,5 @@
+Aqui terá um texto aleatório
+Para
+Aparecer
+No console da IDE
+Blablablablabla
