@@ -1,10 +1,10 @@
-package reservationatv.model.entities;
+package com.reservationatv.model.entities;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
-import reservationatv.model.exceptions.ReservationException;
+import com.reservationatv.model.exceptions.ReservationException;
 
 public class Reservation {
     private Integer roomNumber;

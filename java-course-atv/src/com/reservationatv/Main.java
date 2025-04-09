@@ -1,6 +1,6 @@
-package reservationatv;
+package com.reservationatv;
 
-import reservationatv.service.ReservationService;
+import com.reservationatv.service.ReservationService;
 
 public class Main {
     

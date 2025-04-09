@@ -1,12 +1,12 @@
-package reservationatv.service;
+package com.reservationatv.service;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
 
-import reservationatv.model.entities.Reservation;
-import reservationatv.model.exceptions.ReservationException;
+import com.reservationatv.model.entities.Reservation;
+import com.reservationatv.model.exceptions.ReservationException;
 
 public class ReservationService {
     
